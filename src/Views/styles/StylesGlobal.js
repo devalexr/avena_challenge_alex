@@ -19,7 +19,6 @@ export const GUI_fuentes = {
 export const GUI_styles = StyleSheet.create({
   container: {
     backgroundColor: GUI_colors.COLOR_GRAY_LIGHT,
-    alignItems: 'center',
     padding: 20,
     flex:1
   },
@@ -37,6 +36,11 @@ export const GUI_styles = StyleSheet.create({
   },
   text:{
     fontSize: 16,
+    color: GUI_colors.COLOR_FONT_DEFAULT,
+    fontFamily: GUI_fuentes.FONT_REGULAR
+  },
+  textSmall:{
+    fontSize: 12,
     color: GUI_colors.COLOR_FONT_DEFAULT,
     fontFamily: GUI_fuentes.FONT_REGULAR
   },
