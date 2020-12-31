@@ -11,6 +11,7 @@ export const GUI_colors = {
   COLOR_ICON: '#E3E3E3',
   COLOR_RED_LIGHT: '#EE6A6E',
   COLOR_RED_STRONG: '#F02756',
+  COLOR_BLUE_STRONG : '#23233C',
 };
 
 export const GUI_fuentes = {
