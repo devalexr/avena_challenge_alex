@@ -2,6 +2,7 @@
 import React, {Component} from 'react';
 import {View, Text, TouchableOpacity, Image, Dimensions } from 'react-native';
 import {GUI_styles, GUI_colors} from '../styles/StylesGlobal';
+import ELEBackButton from '../elements/navigation/ELEBackButton';
 
 export default class Screen1View extends Component {
 
@@ -11,6 +12,7 @@ export default class Screen1View extends Component {
         <View style={{
           flex:1,
         }}>
+          <ELEBackButton />
           <Image 
           style={{
             width:'100%',
@@ -25,11 +27,11 @@ export default class Screen1View extends Component {
             width: '100%',
             borderTopLeftRadius:120,
             paddingVertical:40,
-            marginTop:-100,
+            marginTop:-50,
             flex:1,
             alignItems:'center',
             justifyContent:'center'
-          }, GUI_styles.shadow]}>
+          }]}>
             <View style={{
               padding:20
             }}>
@@ -40,9 +42,9 @@ export default class Screen1View extends Component {
         </View>
         <View style={{
           padding:40,
-          backgroundColor:'red'
+          backgroundColor:'white'
         }}>
-
+          <Text>Holaa</Text>
         </View>
       </>
     );
