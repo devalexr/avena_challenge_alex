@@ -6,6 +6,7 @@ import {SafeAreaView} from 'react-native';
 //=========== SCENES ===========
 import InitView from '../../Views/Init/InitView';
 import HomeView from '../../Views/Home/HomeView';
+import Screen1View from '../../Views/Screens/Screen1View';
 
 // create a component
 export default class ROUTERMain extends Component {
@@ -16,6 +17,7 @@ export default class ROUTERMain extends Component {
           <Scene key="root">
             <Scene key="init_root" component={InitView} hideNavBar />
             <Scene key="home" component={HomeView} hideNavBar />
+            <Scene key="screen_1" component={Screen1View} hideNavBar />
           </Scene>
         </Router>
       </SafeAreaView>

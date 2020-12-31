@@ -5,5 +5,9 @@ import {GUI_styles, GUI_colors} from '../styles/StylesGlobal';
 
 export default class Screen1View extends Component {
 
-
+  render() {
+    return(
+        <View></View>
+    );
+  }
 }

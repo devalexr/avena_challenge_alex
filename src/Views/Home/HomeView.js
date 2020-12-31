@@ -4,6 +4,7 @@ import {View, Text, TouchableOpacity, ScrollView} from 'react-native';
 import {GUI_styles, GUI_colors} from '../styles/StylesGlobal';
 import ELETop1 from '../elements/ui/ELETop1';
 import { Icon } from 'react-native-elements';
+import {Actions} from 'react-native-router-flux';
 
 export default class HomeView extends Component {
 
@@ -17,7 +18,7 @@ export default class HomeView extends Component {
           <View style={[GUI_styles.container, {marginTop:-20}]}>
               <Text style={GUI_styles.textTitleBig}>Avena Challenge</Text>
               <Text style={[GUI_styles.textPMuted, {marginBottom:30}]}>Selecciona del menú la pantalla a visualizar</Text>
-              {this.menuElement('Screen 1', 'Los mejores tips para tu dieta.', ()=>{})}
+              {this.menuElement('Screen 1', 'Los mejores tips para tu dieta.', ()=>{ Actions.screen_1();})}
               {this.menuElement('Screen 2', '¡Bienvenido! (Pantalla de Login)', ()=>{})}
               {this.menuElement('Screen 3', 'Selecciona tu comida.', ()=>{})}
               {this.menuElement('Screen 4', 'Select your food', ()=>{})}
