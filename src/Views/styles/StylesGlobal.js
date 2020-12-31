@@ -9,6 +9,8 @@ export const GUI_colors = {
   COLOR_FONT_STRONG: '#122f54',
   COLOR_GREEN_STRONG: '#6CC57C',
   COLOR_ICON: '#E3E3E3',
+  COLOR_RED_LIGHT : '#EE6A6E',
+  COLOR_RED_STRONG : '#F02756',
 };
 
 export const GUI_fuentes = {
