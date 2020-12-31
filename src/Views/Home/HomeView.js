@@ -23,7 +23,7 @@ export default class HomeView extends Component {
             <Text style={GUI_styles.textTitleBig}>Avena Challenge</Text>
             <Text style={[GUI_styles.textPMuted, { marginBottom: 30 }]}>Selecciona del menú la pantalla a visualizar</Text>
             {this._menuElement('Screen 1', 'Los mejores tips para tu dieta.', () => { Actions.screen_1(); })}
-            {this._menuElement('Screen 2', '¡Bienvenido! (Pantalla de Login)', () => { })}
+            {this._menuElement('Screen 2', '¡Bienvenido! (Pantalla de Login)', () => { Actions.screen_2(); })}
             {this._menuElement('Screen 3', 'Explora el menú.', () => { Actions.screen_3(); })}
             {this._menuElement('Screen 4', 'Detalles del platillo.', () => { Actions.screen_4(); })}
           </View>
