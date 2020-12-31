@@ -5,6 +5,7 @@ import { GUI_styles, GUI_colors } from '../styles/StylesGlobal';
 import ELEBackButton from '../elements/navigation/ELEBackButton';
 import { Icon } from 'react-native-elements';
 import ELEBottomNavigationMenu from '../elements/navigation/ELEBottomNavigationMenu';
+import ELELikeButton from '../elements/screens/4/ELELikeButton';
 
 export default class Screen4View extends Component {
 
@@ -12,6 +13,7 @@ export default class Screen4View extends Component {
     return (
       <>
         <ELEBackButton />
+        <ELELikeButton />
         <ScrollView style={{ backgroundColor: GUI_colors.COLOR_GRAY_LIGHT }}>
           <Image
             style={{
