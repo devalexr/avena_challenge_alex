@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, { Component } from 'react';
-import { View, Text, TouchableOpacity, ScrollView, Image, Dimensions } from 'react-native';
+import { View, Text, ScrollView, Image } from 'react-native';
 import { GUI_styles, GUI_colors } from '../styles/StylesGlobal';
 import ELEBackButton from '../elements/navigation/ELEBackButton';
 import { Icon } from 'react-native-elements';
@@ -24,7 +24,6 @@ export default class HomeView extends Component {
             source={require('../../assets/img/tops/top2.png')}
           />
           <View style={[GUI_styles.container, {}]}>
-
             <View style={{
               marginTop:-20,
               flexDirection:'row'
@@ -55,8 +54,6 @@ export default class HomeView extends Component {
             </View>
             <ELEResultsInformation />
             <ELEFoodSlide />
-
-
           </View>
         </ScrollView>
         <ELEBottomNavigationMenu />

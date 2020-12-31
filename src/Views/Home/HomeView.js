@@ -22,17 +22,17 @@ export default class HomeView extends Component {
           <View style={[GUI_styles.container, { marginTop: -30 }]}>
             <Text style={GUI_styles.textTitleBig}>Avena Challenge</Text>
             <Text style={[GUI_styles.textPMuted, { marginBottom: 30 }]}>Selecciona del menú la pantalla a visualizar</Text>
-            {this.menuElement('Screen 1', 'Los mejores tips para tu dieta.', () => { Actions.screen_1(); })}
-            {this.menuElement('Screen 2', '¡Bienvenido! (Pantalla de Login)', () => { })}
-            {this.menuElement('Screen 3', 'Explora el menú.', () => { Actions.screen_3(); })}
-            {this.menuElement('Screen 4', 'Detalles del platillo.', () => { })}
+            {this._menuElement('Screen 1', 'Los mejores tips para tu dieta.', () => { Actions.screen_1(); })}
+            {this._menuElement('Screen 2', '¡Bienvenido! (Pantalla de Login)', () => { })}
+            {this._menuElement('Screen 3', 'Explora el menú.', () => { Actions.screen_3(); })}
+            {this._menuElement('Screen 4', 'Detalles del platillo.', () => { Actions.screen_4(); })}
           </View>
         </ScrollView>
       </>
     );
   }
 
-  menuElement(title, description, onPress) {
+  _menuElement(title, description, onPress) {
     return (
         <TouchableOpacity onPress={() => {
           onPress();
