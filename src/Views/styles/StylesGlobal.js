@@ -100,13 +100,13 @@ export const GUI_styles = StyleSheet.create({
     marginBottom: 30,
     borderColor:'white',
     justifyContent: 'flex-start',
-    shadowColor: "#000",
+    shadowColor: Platform.OS == 'ios' ? GUI_colors.COLOR_ICON : "#000",
     shadowOffset: {
       width: 0,
-      height: 12,
+      height: 8,
     },
     shadowOpacity: 0.58,
-    shadowRadius: 16.00,
+    shadowRadius: 12,
     elevation: 12,
   },
 });

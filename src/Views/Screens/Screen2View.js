@@ -1,7 +1,7 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, { Component } from 'react';
 import { View, Text, TouchableOpacity, ScrollView, Image } from 'react-native';
-import { GUI_styles, GUI_colors, GUI_fuentes } from '../styles/StylesGlobal';
+import { GUI_styles,  GUI_fuentes } from '../styles/StylesGlobal';
 import ELEBackButton from '../elements/navigation/ELEBackButton';
 import ELEInput from '../elements/form/ELEInput';
 import ELEButtonBig from '../elements/buttons/ELEButtonBig';
@@ -87,6 +87,7 @@ export default class Screen2View extends Component {
             paddingHorizontal: 40,
             justifyContent: 'center', 
             alignItems: 'center',
+            paddingBottom : 10,
           }}>
             {this._loginMethodButton('facebook', require('../../assets/img/social/facebook.png') , 12)}
             {this._loginMethodButton('google', require('../../assets/img/social/google.png'), 24)}
