@@ -7,7 +7,7 @@ export default class ELEFoodSlide extends Component {
 
   render() {
     return (
-      <View style={{flex: 1,  justifyContent: 'center', alignItems:'center'}}>
+      <View style={{flex: 1,  justifyContent: 'center', alignItems:'center', padding:20}}>
         <Carousel
         ref={(c) => { this._carousel = c; }}
         data={[
@@ -28,7 +28,7 @@ export default class ELEFoodSlide extends Component {
         itemWidth={260}
         layout={'default'}
         renderItem={this._renderItem}
-        firstItem={1}
+        firstItem={1} //fix this on iOS
         />
       </View>
     );
@@ -37,7 +37,7 @@ export default class ELEFoodSlide extends Component {
   _renderItem = ({ item, index }) => {
     return (
       <View style={[{
-      height: 350,
+      height: 370,
       margin: 5,
       }]}>
         <View style={[GUI_styles.shadow, {
@@ -49,7 +49,7 @@ export default class ELEFoodSlide extends Component {
             <Image 
             style={{
               width:'100%',
-              height:300,
+              height:320,
               borderRadius: 20,
             }}
             source={item.img}
@@ -57,7 +57,7 @@ export default class ELEFoodSlide extends Component {
           </TouchableWithoutFeedback>
         </View>
         <View style={{
-          height:50,
+          height:70,
           padding:20,
           justifyContent: 'center', 
           alignItems:'center',
