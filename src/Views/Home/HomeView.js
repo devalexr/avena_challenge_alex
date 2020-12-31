@@ -34,7 +34,9 @@ export default class HomeView extends Component {
 
   menuElement(title, description, onPress) {
     return (
-      <View
+        <TouchableOpacity onPress={() => {
+          onPress();
+        }}
         style={[
           {
             backgroundColor: 'white',
@@ -46,31 +48,29 @@ export default class HomeView extends Component {
           },
           GUI_styles.shadow,
         ]}>
-        <TouchableOpacity style={{ flexDirection: 'row', }} onPress={() => {
-          onPress();
-        }}>
-          <View
-            style={{
-              flex: 10,
-            }}>
-            <Text style={GUI_styles.textStrong}>{title}</Text>
-            <Text style={GUI_styles.textSmallMuted}>{description}</Text>
+          <View style={{flexDirection:'row'}}>
+            <View
+              style={{
+                flex: 10,
+              }}>
+              <Text style={GUI_styles.textStrong}>{title}</Text>
+              <Text style={GUI_styles.textSmallMuted}>{description}</Text>
+            </View>
+            <View
+              style={{
+                flex: 2,
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}>
+              <Icon
+                name="angle-right"
+                type='font-awesome'
+                size={30}
+                color={GUI_colors.COLOR_GREEN_STRONG}
+              />
+            </View>
           </View>
-          <View
-            style={{
-              flex: 2,
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}>
-            <Icon
-              name="angle-right"
-              type='font-awesome'
-              size={30}
-              color={GUI_colors.COLOR_GREEN_STRONG}
-            />
-          </View>
-        </TouchableOpacity>
-      </View>
+      </TouchableOpacity>
     );
   }
 }
