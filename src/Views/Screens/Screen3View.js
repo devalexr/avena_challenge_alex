@@ -6,6 +6,8 @@ import ELEBackButton from '../elements/navigation/ELEBackButton';
 import { Icon } from 'react-native-elements';
 import { Actions } from 'react-native-router-flux';
 import ELEFoodSlide from '../elements/screens/3/ELEFoodSlide';
+import ELEResultsInformation from '../elements/screens/3/ELEResultsInformation';
+
 
 export default class HomeView extends Component {
 
@@ -32,7 +34,7 @@ export default class HomeView extends Component {
                 flexDirection:'row',
                 alignItems:'center'
               }}>
-                <Text style={[GUI_styles.textStrong, {fontSize:30, marginRight:20}]} >Activity</Text>
+                <Text style={[GUI_styles.textStrong, {fontSize:24, marginRight:20}]} >Activity</Text>
                 <Icon
                 name="angle-down"
                 type='font-awesome'
@@ -52,7 +54,9 @@ export default class HomeView extends Component {
                 <Text style={GUI_styles.textSmall}>Today, 2 october 2020</Text>
               </View>
             </View>
+            <ELEResultsInformation />
             <ELEFoodSlide />
+
 
           </View>
         </ScrollView>

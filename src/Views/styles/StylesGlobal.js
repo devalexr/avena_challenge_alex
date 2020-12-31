@@ -60,6 +60,16 @@ export const GUI_styles = StyleSheet.create({
     color:  GUI_colors.COLOR_FONT_MUTED,
     fontFamily: GUI_fuentes.FONT_REGULAR
   },
+  textMicroMuted:{
+    fontSize: 10,
+    color:  GUI_colors.COLOR_FONT_MUTED,
+    fontFamily: GUI_fuentes.FONT_REGULAR
+  },
+  textMicro:{
+    fontSize: 10,
+    color:  GUI_colors.COLOR_FONT_DEFAULT,
+    fontFamily: GUI_fuentes.FONT_REGULAR
+  },
   //=========================== SHADOW ====================================
   shadow: {
     shadowColor: "#000",
