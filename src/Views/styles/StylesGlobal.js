@@ -1,5 +1,5 @@
 import { StyleSheet, Platform } from 'react-native';
-import {Fonts} from './Fonts';
+import { Fonts } from './Fonts';
 
 export const GUI_colors = {
   COLOR_GRAY_LIGHT: '#F4F5FA',
@@ -9,67 +9,67 @@ export const GUI_colors = {
   COLOR_FONT_STRONG: '#122f54',
   COLOR_GREEN_STRONG: '#6CC57C',
   COLOR_ICON: '#E3E3E3',
-  COLOR_RED_LIGHT : '#EE6A6E',
-  COLOR_RED_STRONG : '#F02756',
+  COLOR_RED_LIGHT: '#EE6A6E',
+  COLOR_RED_STRONG: '#F02756',
 };
 
 export const GUI_fuentes = {
-  FONT_BOLD : Fonts.Bold,
-  FONT_REGULAR : Fonts.Regular,
+  FONT_BOLD: Fonts.Bold,
+  FONT_REGULAR: Fonts.Regular,
 }
 
 export const GUI_styles = StyleSheet.create({
   container: {
     backgroundColor: GUI_colors.COLOR_GRAY_LIGHT,
     padding: 20,
-    flex:1
+    flex: 1
   },
   //=========================== TEXT ===============================
-  textTitleBig:{
+  textTitleBig: {
     fontSize: 40,
-    textAlign : 'center',
+    textAlign: 'center',
     color: GUI_colors.COLOR_FONT_DEFAULT,
     fontFamily: GUI_fuentes.FONT_BOLD
   },
-  textStrong:{
+  textStrong: {
     fontSize: 16,
     color: GUI_colors.COLOR_FONT_DEFAULT,
     fontFamily: GUI_fuentes.FONT_BOLD
   },
-  text:{
+  text: {
     fontSize: 16,
     color: GUI_colors.COLOR_FONT_DEFAULT,
     fontFamily: GUI_fuentes.FONT_REGULAR
   },
-  textSmall:{
+  textSmall: {
     fontSize: 12,
     color: GUI_colors.COLOR_FONT_DEFAULT,
     fontFamily: GUI_fuentes.FONT_REGULAR
   },
-  textTitle:{
+  textTitle: {
     fontSize: 22,
     color: GUI_colors.COLOR_FONT_DEFAULT,
     fontFamily: GUI_fuentes.FONT_BOLD
   },
-  textPMuted:{
+  textPMuted: {
     fontSize: 16,
-    textAlign : 'center',
-    color:  GUI_colors.COLOR_FONT_MUTED,
+    textAlign: 'center',
+    color: GUI_colors.COLOR_FONT_MUTED,
     fontFamily: GUI_fuentes.FONT_REGULAR
   },
-  textSmallMuted:{
+  textSmallMuted: {
     fontSize: 12,
-    color:  GUI_colors.COLOR_FONT_MUTED,
+    color: GUI_colors.COLOR_FONT_MUTED,
     fontFamily: GUI_fuentes.FONT_REGULAR
   },
-  textMicroMuted:{
+  textMicroMuted: {
     fontSize: 10,
-    color:  GUI_colors.COLOR_FONT_MUTED,
+    color: GUI_colors.COLOR_FONT_MUTED,
     fontFamily: GUI_fuentes.FONT_REGULAR
   },
-  textMicro:{
+  textMicro: {
     fontSize: 10,
-    color:  GUI_colors.COLOR_FONT_DEFAULT,
+    color: GUI_colors.COLOR_FONT_DEFAULT,
     fontFamily: GUI_fuentes.FONT_REGULAR
   },
   //=========================== SHADOW ====================================
@@ -82,5 +82,30 @@ export const GUI_styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     elevation: 5,
+  },
+  //=========================== FORM ==============================
+  formInput: {
+    fontFamily: GUI_fuentes.FONT_REGULAR,
+    color: GUI_colors.COLOR_FONT_DEFAULT,
+    backgroundColor: 'white',
+    fontSize: 14,
+    paddingLeft: 20,
+    borderRadius:5,
+  },
+  formInputContainer: {
+    marginBottom: 14,
+    borderRadius:5,
+    width: '90%',
+    marginBottom: 30,
+    borderColor:'white',
+    justifyContent: 'flex-start',
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 12,
+    },
+    shadowOpacity: 0.58,
+    shadowRadius: 16.00,
+    elevation: 12,
   },
 });
