@@ -4,10 +4,9 @@ import { View, Text, TouchableOpacity, ScrollView, Image, Dimensions } from 'rea
 import { GUI_styles, GUI_colors } from '../styles/StylesGlobal';
 import ELEBackButton from '../elements/navigation/ELEBackButton';
 import { Icon } from 'react-native-elements';
-import { Actions } from 'react-native-router-flux';
 import ELEFoodSlide from '../elements/screens/3/ELEFoodSlide';
 import ELEResultsInformation from '../elements/screens/3/ELEResultsInformation';
-
+import ELEBottomNavigationMenu from '../elements/navigation/ELEBottomNavigationMenu';
 
 export default class HomeView extends Component {
 
@@ -60,6 +59,7 @@ export default class HomeView extends Component {
 
           </View>
         </ScrollView>
+        <ELEBottomNavigationMenu />
       </>
     );
   }

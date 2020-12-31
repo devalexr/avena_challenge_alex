@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { View, TouchableOpacity, Text, ScrollView } from 'react-native';
 import { GUI_colors, GUI_styles } from '../../../styles/StylesGlobal';
-import {Actions} from 'react-native-router-flux';
 import { Icon } from 'react-native-elements';
 
 export default class ELEResultsInformation extends Component {
