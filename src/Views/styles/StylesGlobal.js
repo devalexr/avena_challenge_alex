@@ -34,6 +34,11 @@ export const GUI_styles = StyleSheet.create({
     color: GUI_colors.COLOR_FONT_DEFAULT,
     fontFamily: GUI_fuentes.FONT_BOLD
   },
+  text:{
+    fontSize: 16,
+    color: GUI_colors.COLOR_FONT_DEFAULT,
+    fontFamily: GUI_fuentes.FONT_REGULAR
+  },
   textTitle:{
     fontSize: 22,
     color: GUI_colors.COLOR_FONT_DEFAULT,

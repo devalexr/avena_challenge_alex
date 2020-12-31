@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import {View, Text, TouchableOpacity, Image, Dimensions } from 'react-native';
 import {GUI_styles, GUI_colors} from '../styles/StylesGlobal';
 import ELEBackButton from '../elements/navigation/ELEBackButton';
+import ELEButtonSmall from '../elements/buttons/ELEButtonSmall';
 
 export default class Screen1View extends Component {
 
@@ -41,10 +42,30 @@ export default class Screen1View extends Component {
           </View>
         </View>
         <View style={{
-          padding:40,
-          backgroundColor:'white'
+          paddingVertical:40,
+          paddingHorizontal:20,
+          backgroundColor:'white',
+          flexDirection:'row'
         }}>
-          <Text>Holaa</Text>
+          <View style={{flex:1, marginRight:20}}>
+            <ELEButtonSmall
+            onPress={()=>{
+              alert('Skip');
+            }}
+            active={false}
+            title="Skip step"  
+            />
+          </View>
+
+          <View style={{flex:1}}>
+            <ELEButtonSmall
+            onPress={()=>{
+              alert('Next');
+            }}
+            active={true}
+            title="Next"  
+            />
+          </View>
         </View>
       </>
     );
