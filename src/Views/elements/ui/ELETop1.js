@@ -9,7 +9,7 @@ export default class ELETop1 extends Component {
       <View style={{backgroundColor: GUI_colors.COLOR_GRAY_LIGHT}}>
         <SvgUri
           width="100%"
-          height="180"
+          height="160"
           source={require('../../../assets/svg/top1.svg')}
         />
       </View>
