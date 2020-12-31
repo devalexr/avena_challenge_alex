@@ -73,6 +73,10 @@
 		<string>FontBold.ttf</string>
 		<string>FontRegular.ttf</string>
 		<string>FontBoldRegular.ttf</string>
+		<string>FB.ttf</string>
+		<string>OpenSans-Bold.ttf</string>
+		<string>GoogleSans-Bold.ttf</string>
+		<string>GoogleSans-Regular.ttf</string>
 	</array>
 </dict>
 </plist>

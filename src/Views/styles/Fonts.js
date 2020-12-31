@@ -1,4 +1,4 @@
 export const Fonts = {
-    Bold : 'FontBoldRegular',
-    Regular : 'FontRegular',
+    Bold : 'GoogleSans-Bold',
+    Regular : 'GoogleSans-Regular',
 }
