@@ -23,7 +23,7 @@ export default class ELEResultsInformation extends Component {
   informationItem(title, lost, kcal)
   {
     return(
-      <View style={{paddingVertical:4}}>
+      <View style={{backgroundColor:GUI_colors.COLOR_GRAY_LIGHT, paddingBottom:6}}>
         <View style={[GUI_styles.shadow, {
           backgroundColor:'white',
           width:250,
