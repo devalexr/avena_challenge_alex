@@ -5,7 +5,7 @@ import { GUI_styles, GUI_colors } from '../styles/StylesGlobal';
 import ELEBackButton from '../elements/navigation/ELEBackButton';
 import { Icon } from 'react-native-elements';
 import { Actions } from 'react-native-router-flux';
-
+import ELEFoodSlide from '../elements/screens/3/ELEFoodSlide';
 
 export default class HomeView extends Component {
 
@@ -52,6 +52,7 @@ export default class HomeView extends Component {
                 <Text style={GUI_styles.textSmall}>Today, 2 october 2020</Text>
               </View>
             </View>
+            <ELEFoodSlide />
 
           </View>
         </ScrollView>
