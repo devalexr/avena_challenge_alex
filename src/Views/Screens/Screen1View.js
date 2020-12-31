@@ -1,9 +1,10 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {Component} from 'react';
-import {View, Text, TouchableOpacity, Image, Dimensions } from 'react-native';
+import {View, Text, Image } from 'react-native';
 import {GUI_styles, GUI_colors} from '../styles/StylesGlobal';
 import ELEBackButton from '../elements/navigation/ELEBackButton';
 import ELEButtonSmall from '../elements/buttons/ELEButtonSmall';
+import { Icon } from 'react-native-elements';
 
 export default class Screen1View extends Component {
 
@@ -34,6 +35,15 @@ export default class Screen1View extends Component {
             justifyContent:'center'
           }]}>
             <View style={{
+              alignItems:'center',
+              flexDirection:'row',
+              marginBottom:10
+            }}>
+              {this.stepPoint(true)}
+              {this.stepPoint(false)}
+              {this.stepPoint(false)}
+            </View>
+            <View style={{
               padding:20
             }}>
               <Text style={[GUI_styles.textTitle, {textAlign:'center', marginBottom:20 }]}>best tips for your diet</Text>
@@ -47,7 +57,7 @@ export default class Screen1View extends Component {
           backgroundColor:'white',
           flexDirection:'row'
         }}>
-          <View style={{flex:1, marginRight:20}}>
+          <View style={{flex:1, marginRight:30}}>
             <ELEButtonSmall
             onPress={()=>{
               alert('Skip');
@@ -69,5 +79,22 @@ export default class Screen1View extends Component {
         </View>
       </>
     );
+  }
+
+  stepPoint(active)
+  {
+    return(
+      <View style={{marginRight:10}}>
+        <Icon
+        size={14}
+        type='font-awesome'
+        name='circle'
+        color={ active ? GUI_colors.COLOR_GREEN_STRONG : GUI_colors.COLOR_ICON}
+        style={{
+          marginRight : 10,
+        }}
+        />
+      </View>
+    )
   }
 }

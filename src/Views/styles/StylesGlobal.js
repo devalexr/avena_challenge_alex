@@ -8,6 +8,7 @@ export const GUI_colors = {
   COLOR_FONT_MUTED: '#A5A5A5',
   COLOR_FONT_STRONG: '#122f54',
   COLOR_GREEN_STRONG: '#6CC57C',
+  COLOR_ICON: '#E3E3E3',
 };
 
 export const GUI_fuentes = {
