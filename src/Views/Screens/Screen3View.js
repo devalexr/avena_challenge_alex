@@ -34,10 +34,13 @@ export default class HomeView extends Component {
               }}>
                 <Text style={[GUI_styles.textStrong, {fontSize:30, marginRight:20}]} >Activity</Text>
                 <Icon
-                name="angle-right"
+                name="angle-down"
                 type='font-awesome'
                 size={30}
                 color={GUI_colors.COLOR_FONT_DEFAULT}
+                onPress={()=>{
+                  alert('press activity')
+                }}
                 />
               </View>
               <View style={{
